@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/systems/ai_system.gd" id="1_ai"]
+
+[node name="EnemyBasic" type="CharacterBody3D"]
+script = ExtResource("1_ai")
+enemy_id = "basic"
+
+[node name="NavigationAgent3D" type="NavigationAgent3D" parent="."]
