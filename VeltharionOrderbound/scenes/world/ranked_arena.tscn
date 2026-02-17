@@ -1,0 +1,11 @@
+[gd_scene load_steps=3 format=3]
+
+[ext_resource type="PackedScene" path="res://scenes/actors/player.tscn" id="1_pl"]
+[ext_resource type="PackedScene" path="res://scenes/actors/enemy_elite.tscn" id="2_bot"]
+
+[node name="RankedArena" type="Node3D"]
+
+[node name="Player" parent="." instance=ExtResource("1_pl")]
+
+[node name="BotChallenger" parent="." instance=ExtResource("2_bot")]
+position = Vector3(6, 0, 0)
