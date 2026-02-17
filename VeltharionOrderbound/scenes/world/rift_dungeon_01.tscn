@@ -1,0 +1,18 @@
+[gd_scene load_steps=4 format=3]
+
+[ext_resource type="PackedScene" path="res://scenes/actors/player.tscn" id="1_pl"]
+[ext_resource type="PackedScene" path="res://scenes/actors/enemy_basic.tscn" id="2_b"]
+[ext_resource type="PackedScene" path="res://scenes/actors/enemy_elite.tscn" id="3_e"]
+
+[node name="RiftDungeon01" type="Node3D"]
+
+[node name="Player" parent="." instance=ExtResource("1_pl")]
+
+[node name="EnemyA" parent="." instance=ExtResource("2_b")]
+position = Vector3(5, 0, 2)
+
+[node name="EnemyB" parent="." instance=ExtResource("2_b")]
+position = Vector3(-4, 0, 3)
+
+[node name="EnemyElite" parent="." instance=ExtResource("3_e")]
+position = Vector3(0, 0, -6)
